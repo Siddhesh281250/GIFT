@@ -1,0 +1,110 @@
+html{
+    background: 
+        linear-gradient(rgba(241,165,228,0.8), rgba(241,165,228,0.8)),
+        url("EYES.jpeg");
+    background-size: contain;
+    background-position: left;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#centi{
+    background-color: #ee9df4;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(146, 26, 26);
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: 15px 10px 5px 2px rgb(244, 38, 106);
+    overflow-y: auto
+    
+}
+#photo{
+    border-radius: 250px;
+    border: solid;
+    
+    
+    
+
+}
+
+/* NO button */
+#No{
+    position: absolute;
+    transition: 0.2s;
+}
+
+/* All buttons */
+#butt{
+    padding: 25px 25px;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* YES button hover */
+.HA:hover{
+    background: linear-gradient(135deg, #fb24c5, #64dd17);
+    color: white;
+    box-shadow: 0 6px 15px rgba(70, 17, 214, 0.35);
+    transform: scale(1.1);
+}
+#lovePhoto{
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: none;           /* hidden initially */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.hearts{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+.hearts span{
+    position: absolute;
+    bottom: -50px;
+    color: #991ba2;
+    font-size: 30px;
+    animation: floatUp 6s linear infinite;
+}
+.hearts span:nth-child(1){ left: 10%; animation-duration: 5s; }
+.hearts span:nth-child(2){ left: 25%; animation-duration: 7s; font-size: 20px; }
+.hearts span:nth-child(3){ left: 45%; animation-duration: 6s; }
+.hearts span:nth-child(4){ left: 60%; animation-duration: 8s; font-size: 35px; }
+.hearts span:nth-child(5){ left: 75%; animation-duration: 5.5s; }
+.hearts span:nth-child(6){ left: 90%; animation-duration: 7.5s; }
+.hearts span:nth-child(7){ right:85%; animation-duration: 2s; font-size: x-large;}
+.hearts span:nth-child(8){ right:54%; animation-duration: 4.2s;}
+.hearts span:nth-child(9){ right:69%; animation-duration: 1s;}
+.hearts span:nth-child(10){ right:20%; animation-duration: 5s;}
+
+@keyframes floatUp{
+    0%{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+    }
+}
